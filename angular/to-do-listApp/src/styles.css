@@ -1,0 +1,19 @@
+body {
+    background-image: url('https://th.bing.com/th/id/OIP.j8B6cAofheOOJlvjxuOM_gHaE8?w=270&h=180&c=7&r=0&o=5&pid=1.7');
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+  h1,h5 {
+    color: aqua;
+
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  .card {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  

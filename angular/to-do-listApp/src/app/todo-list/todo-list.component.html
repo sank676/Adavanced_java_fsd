@@ -1,0 +1,12 @@
+<div class="card mb-3" *ngFor="let task of tasks">
+    <div class="card-body">
+      <h5 class="card-title">{{ task }}</h5>
+      <div class="btn-group">
+        <button class="btn btn-primary" (click)="onUpdateTask(task,task)">Update</button>
+      <button class="btn btn-danger" (click)="onDeleteTask(task)">Delete</button>
+     </div>
+    </div>
+  </div>
+
+  
+  

@@ -1,0 +1,12 @@
+<h1>Dashboard</h1>
+<ul>
+  <li *ngFor="let student of students">
+    <h3>{{ student.name }}</h3>
+    <p>Average Grade: {{ calculateAverageGrade(student.grades) }}</p>
+    <ul>
+      <li *ngFor="let grade of student.grades">
+        {{ grade.subject }}: {{ grade.grade }}
+      </li>
+    </ul>
+  </li>
+</ul>

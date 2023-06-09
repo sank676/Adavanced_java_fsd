@@ -1,0 +1,27 @@
+<h3>Student List</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Math</th>
+      <th>Science</th>
+      <th>English</th>
+      <th>Average Grade</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{ student.name }}</td>
+      <td>{{ student.grades.math }}</td>
+      <td>{{ student.grades.science }}</td>
+      <td>{{ student.grades.english }}</td>
+      <td>{{ calculateAverageGrade(student.grades) }}</td>
+      <td>
+        <button (click)="editStudent(student)">Edit</button>
+        <button (click)="deleteStudent(student)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<button (click)="addStudent()">Add Student</button>

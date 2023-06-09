@@ -1,0 +1,20 @@
+<h3>Add/Edit Student</h3>
+<form (ngSubmit)="saveStudent()">
+  <div>
+    <label>Name:</label>
+    <input type="text" [(ngModel)]="student.name" required>
+  </div>
+  <div>
+    <label>Math Grade:</label>
+    <input type="number" [(ngModel)]="student.grades.math" required>
+  </div>
+  <div>
+    <label>Science Grade:</label>
+    <input type="number" [(ngModel)]="student.grades.science" required>
+  </div>
+  <div>
+    <label>English Grade:</label>
+    <input type="number" [(ngModel)]="student.grades.english" required>
+  </div>
+  <button type="submit">{{ editMode ? 'Update' : 'Add' }}</button>
+</form>

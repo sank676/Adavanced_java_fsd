@@ -1,0 +1,15 @@
+<!-- <div class="card mb-3">
+    <div class="card-body">
+      <form (submit)="addTask()">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Task name" [(ngModel)]="taskName" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Task</button>
+      </form>
+    </div>
+  </div> -->
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" [(ngModel)]="taskName">
+    <button class="btn btn-primary" (click)="addNewTask()">Add Task</button>
+  </div>
+    

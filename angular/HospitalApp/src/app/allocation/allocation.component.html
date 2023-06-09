@@ -1,0 +1,16 @@
+<h2>Doctor Allocation</h2>
+<div *ngIf="selectedDoctor">
+  <p>Selected Doctor: {{ selectedDoctor.name }}</p>
+  <h3>Allocated Patients:</h3>
+  <ul>
+    <li *ngFor="let patient of patients">
+      {{ patient.name }}
+    </li>
+  </ul>
+  <h3>Patient List:</h3>
+  <ul>
+    <li *ngFor="let patient of PatientService.getPatients()">
+      {{ patient.name }} <button (click)="allocatePatient(patient)">Allocate</button>
+    </li>
+  </ul>
+</div>
