@@ -18,6 +18,6 @@ public class User {
     private  String userName;
     private  String name;
     private  String password;
-    private  String role;
-    private  String token;
+//    private  String role;
+//    private  String token;
 }
